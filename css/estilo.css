@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins';
+    background: #C8C8C8;
+}
+
+header {
+    background-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%), url(../imagens/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 120vh;
+}
+
+header div.topo img {
+    padding-top: 43px;
+    padding-left: 5%;
+    width: 15%;
+    height: auto;
+}
+
+header nav#menu_principal {
+    clear: both;
+    display: flex;
+    float: right;
+    padding-top: 3%;
+    padding-right: 5%;
+}
+
+header nav#menu_principal ul li {
+    margin-left: 37px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+header nav#menu_principal ul li button {
+    margin-right: 18px;
+    padding: 10px 18px;
+    align-items: flex-start;
+    border-radius: 6px;
+    gap: 10px;
+    border: none;
+    background-color: #DF2935;
+    transition: 0.6s;
+}
+
+header nav#menu_principal ul li a {
+    float: left;
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+header nav#menu_principal ul li a:hover {
+    float: left;
+    text-decoration: none;
+    color: #DF2935;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header nav#menu_principal ul li button:hover {
+    margin-right: 18px;
+    padding: 10px 18px;
+    align-items: flex-start;
+    border-radius: 6px;
+    gap: 10px;
+    border: none;
+    background-color: #FFF;
+}
+
+header svg {
+    margin-top: 30px;
+    stroke-width: 1px;
+    stroke: #FFF;
+}
+
+header div#banner_text {
+    text-align: center;
+    color: #FFF;
+    padding-top: 10%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header div#banner_text p#texto_banner_01 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+header div#banner_text p#texto_banner_02 {
+    font-size: 16px;
+    font-weight: 300;
+    width: 790px;
+    text-align: center;
+}
+
+header div#banner_button {
+    text-align: center;
+}
+
+header div#banner_button button#botao_banner_01 {
+    margin-right: 18px;
+    padding: 10px 18px;
+    align-items: flex-start;
+    border-radius: 6px;
+    gap: 10px;
+    border: none;
+    background-color: #DF2935;
+    transition: 0.6s;
+}
+
+header div#banner_button button#botao_banner_01 a {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+header div#banner_button button#botao_banner_01:hover {
+    margin-right: 18px;
+    padding: 10px 18px;
+    align-items: flex-start;
+    border-radius: 6px;
+    gap: 10px;
+    border: none;
+    background-color: #FFF;
+}
+
+header div#banner_button button#botao_banner_01 a:hover {
+    color: #DF2935;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+header div#banner_button button#botao_banner_02 {
+    margin-left: 18px;
+    padding: 10px 18px;
+    align-items: flex-start;
+    border-radius: 6px;
+    gap: 10px;
+    border: 2px solid #DF2935;
+    background: none;
+    transition: 0.6s;
+}
+
+header div#banner_button button#botao_banner_02 a {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+header div#banner_button button#botao_banner_02:hover {
+    margin-left: 18px;
+    padding: 10px 18px;
+    align-items: flex-start;
+    border-radius: 6px;
+    gap: 10px;
+    border: 2px solid #FFF;
+    background: none;
+}
+
+header div#banner_button button#botao_banner_02 a:hover {
+    color: #DF2935;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+section#produtos .linha1 {
+    clear: both;
+    border-top: #df29353d solid 2px;
+    padding-bottom: 75px;
+}
+
+section#produtos h1 {
+    text-align: center;
+    color: #000;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+section#produtos div#prod {
+    width: 1100px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+}
+
+section#produtos div#prod div.produtos {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#produtos div#prod div.produtos a img {
+    width: 320px;
+    height: 320px;
+    transition: 0.4s;
+}
+
+section#produtos div#prod div.produtos a img:hover {
+    width: 310px;
+    height: 310px;
+}
+
+section#produtos div#prod div.produtos h2 a {
+    width: 320px;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 23px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.6s;
+}
+
+section#produtos div#prod div.produtos h2 a:hover {
+    width: 320px;
+    color: #FFF;
+    font-size: 23px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #DF2935;
+}
+
+section#news {
+    margin-top: 75px;
+}
+
+section#news .linha2 {
+    clear: both;
+    border-top: #df29353d solid 2px;
+    padding-bottom: 75px;
+}
+
+section#news h1 {
+    text-align: center;
+    color: #000;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+section#news div#ne {
+    width: 1100px;
+    padding-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+}
+
+section#news div#ne div.news {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#news div#ne div.news3 {
+    text-align: right;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#news div#ne div.news a img.news1 {
+    width: 420px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+
+section#news div#ne div.news a img.news1:hover {
+    filter: opacity(70%) grayscale(100%);
+}
+
+section#news div#ne div.news a img.news2 {
+    width: 420px;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.6s;
+}
+
+section#news div#ne div.news a img.news2:hover {
+    filter: opacity(70%) grayscale(100%);
+}
+
+section#news div#ne div.news3 a img.news3 {
+    width: 170px;
+    height: 250px;
+    object-fit: cover;
+    object-position: -90px;
+    transition: 0.6s;
+}
+
+section#news div#ne div.news3 a img.news3:hover {
+    filter: opacity(70%) grayscale(100%);
+}
+
+section#news div#ne div.news h2 {
+    margin-top: 30px;
+}
+
+section#news div#ne div.news3 h2 {
+    margin-top: 30px;
+}
+
+section#news div#ne div.news h2.t1 {
+    width: 420px;
+}
+
+section#news div#ne div.news h2.t2 {
+    width: 420px;
+}
+
+section#news div#ne div.news3 h2.t3 {
+    width: 170px;
+    text-align: center;
+}
+
+section#news div#ne div.news h2 a {
+    color: #000;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+section#news div#ne div.news3 h2 a {
+    color: #000;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+section#news div#ne div.news h2 a:hover {
+    color: #DF2935;
+    font-style: normal;
+}
+
+section#news div#ne div.news3 h2 a:hover {
+    color: #DF2935;
+    font-style: normal;
+}
+
+section#news div#ne button {
+    margin-top: 30px;
+    margin-left: 18px;
+    padding: 10px 18px;
+    align-items: flex-start;
+    border-radius: 6px;
+    gap: 10px;
+    border: 2px solid #DF2935;
+    background: none;
+    transition: 0.6s;
+}
+
+section#news div#ne button:hover {
+    border: 2px solid #000;
+    background: none;
+}
+
+section#news div#ne button a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+section#news div#ne button a:hover {
+    color: #DF2935;
+}
+
+section#news .linha3 {
+    clear: both;
+    border-bottom: #df29353d solid 2px;
+    padding-top: 75px;
+}
+
+footer {
+    padding-top: 90px;
+    background-image: linear-gradient(360deg, #C8C8C8 0%, rgba(194, 194, 194, 0.85) 100%), url(../imagens/imagem_moto_site01.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer div#informacoes {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+}
+
+footer div#informacoes div.sobre {
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer div#informacoes div.sobre img {
+    width: 190px;
+}
+
+footer div#informacoes div.sobre p {
+    padding-top: 15px;
+    width: 275px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+footer div#informacoes h2 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+footer div#informacoes div.contatos {
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer div#informacoes div.contatos ul {
+    width: 175px;
+    padding-top: 10px;
+    list-style: none;
+}
+
+footer div#informacoes div.contatos ul li a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+footer div#informacoes div.contatos ul li a:hover {
+    color: #DF2935;
+}
+
+footer div#informacoes div.horarios {
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer div#informacoes div.horarios h3#horarios_bold {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer div#informacoes div.horarios h3 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+footer div#informacoes div.horarios div.horarios1 {
+    padding-top: 10px;
+}
+
+footer div#informacoes div.horarios div.horarios2 {
+    padding-top: 10px;
+}
+
+footer div#informacoes div.redes {
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer div#informacoes div.redes img {
+    width: 35px;
+    padding-right: 10px;
+    padding-top: 10px;
+    vertical-align: middle;
+    transition: 0.4s;
+}
+
+footer div#informacoes div.redes img:hover {
+    width: 40px;
+}
+
+footer div#copyright {
+    padding-top: 70px;
+    text-align: center;
+}
+
+footer div#copyright h3 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+
+footer div#copyright div.linha4 {
+    border-bottom: #000 solid 1px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 15px;
+}
+
+/* Estilos padrão para telas pequenas e grandes */
+
+@media only screen and (max-width: 768px) {
+    header div.topo img {
+        width: 30%;
+    }
+
+    header nav#menu_principal {
+        padding-top: 5%;
+    }
+
+    header div#banner_text {
+        padding-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .topo img {
+        display: none;
+    }
+
+    #menu_principal #contato {
+        margin-left: -35%;
+    }
+
+    #service {
+        display: none;
+    }
+
+    #banner_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        margin-top: 35%;
+    }
+    header div#banner_text p#texto_banner_01 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-left: 5%;
+        margin-bottom: 7%;
+    }
+    
+    header div#banner_text p#texto_banner_02 {
+        font-size: 12px;
+        font-weight: 300;
+        text-align: center;
+        width: 90%;
+    }
+    #pdscrool{
+        width: 100%;
+        overflow-x: auto; /* Permite rolagem horizontal quando o conteúdo ultrapassa a largura do contêiner */
+        white-space: nowrap;
+    }
+    .sumir{
+        display: none;
+    }
+    #ne button{
+        margin-bottom: 15%;
+    }
+    #newsscrool{
+        width: 100%;
+        overflow-x: auto; /* Permite rolagem horizontal quando o conteúdo ultrapassa a largura do contêiner */
+        white-space: nowrap;
+    }
+    footer{
+        width: 100%;
+        overflow-y: auto; /* Permite rolagem horizontal quando o conteúdo ultrapassa a largura do contêiner */
+        white-space: nowrap;
+    }
+
+}
